@@ -25,7 +25,7 @@ cp example.env .env
 Update the `.env` file with your slack token.
 
 ```bash
-SLACK_ORG_ADMIN_USER_TOKEN=xoxp-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SLACK_USER_TOKEN=xoxb-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 The slack user token can be found in the [You app's admin page](https://api.slack.com/apps). 
