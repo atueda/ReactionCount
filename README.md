@@ -1,4 +1,4 @@
-# section creator
+# Reaction Count
 
 This is a python script for count reaction in channel in Slack. 
 
