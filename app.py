@@ -63,7 +63,7 @@ def get_reaction_count(channel_name, start_date, end_date):
         if max_user:
             # 最も多くのリアクションを持つユーザーとその合計を表示
             message = f"{start_date} 〜 {end_date}の集計結果\n"
-            message += f"最も多くのリアクションをしたユーザー: {max_user}\n 合計リアクション数: {max_reactions} \n"
+            message += f"最も多くのリアクションをしたユーザー: <@{max_user}>\n 合計リアクション数: {max_reactions} \n"
             print(f"最も多くのリアクションを持ったユーザー: {max_user}")
             print(f"合計リアクション数: {max_reactions}")
         else:
@@ -77,7 +77,7 @@ def get_reaction_count(channel_name, start_date, end_date):
             for user_id, reaction_count in user_reaction_count.items():
                 user_info = client.users_info(user=user_id)
                 user_name = user_info["user"]["real_name"]
-                message += f"\n{user_name}: {reaction_count}"
+                message += f"\n<@{user_id}>: {reaction_count}"
                 print(f"{user_name}: {reaction_count}")
         else:
             message = "指定した期間内にリアクションがついたメッセージがありませんでした。"
