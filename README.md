@@ -1,6 +1,6 @@
 # section creator
 
-This is a python script for creating section and add channel in Slack. 
+This is a python script for count reaction in channel in Slack. 
 
 ## Prerequisites
 Make sure you have python3 installed in your system.
@@ -25,7 +25,7 @@ cp example.env .env
 Update the `.env` file with your slack token.
 
 ```bash
-SLACK_USER_TOKEN=xoxb-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SLACK_ORG_ADMIN_USER_TOKEN=xoxp-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 The slack user token can be found in the [You app's admin page](https://api.slack.com/apps). 
@@ -39,6 +39,7 @@ Go to the `OAuth & Permissions` page and copy the `User OAuth Token` under the `
 Run the following command to get the users list whose country attribute is None.
 
 ```bash
+python3 app.py 
 python3 count.py 
 ```
 
